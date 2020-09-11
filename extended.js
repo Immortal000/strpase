@@ -1,3 +1,4 @@
+// @ts-nocheck
 class conStr {
   constructor(string, count, join) {
     this.string = string;
@@ -15,6 +16,5 @@ class conStr {
     return string;
   }
 }
-
 
 module.exports = conStr;

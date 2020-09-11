@@ -1,3 +1,4 @@
+// @ts-nocheck
 class basicStr {
   constructor(string) {
     this.string = string;
@@ -34,9 +35,7 @@ class basicStr {
         }
       }
     }
-    let result = end
-      ? indexes.reverse().slice(0, count).reverse()
-      : indexes.slice(0, count);
+    let result = end ? indexes.reverse().slice(0, count).reverse() : indexes.slice(0, count);
     return result;
   }
 
@@ -88,11 +87,8 @@ class basicStr {
         results.push(index + substring.length);
       }
     }
-    console.log(results);
     return this.string.substring(0, results[occurence]);
   }
 }
-
-console.log(first.cutRight("foo"));
 
 module.exports = basicStr;

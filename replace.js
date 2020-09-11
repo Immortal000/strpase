@@ -1,3 +1,4 @@
+// @ts-nocheck
 class repStr {
   constructor(string, replacestring) {
     this.string = string;
@@ -34,7 +35,6 @@ class repStr {
     let data = this.getEssentialData(substring);
     let essentialData = data.allOccurences;
     let difference = substring.length - this.replacestring.length;
-    console.log(difference);
     // Changes the indexes as though replaced everything
     essentialData.forEach((element) => {
       element.indexes[0] = element.indexes[0] - (substring.length - this.replacestring.length) * element.count;
@@ -50,7 +50,6 @@ class repStr {
       let start = string.substring(0, obj.indexes[0]);
       let end = string.substring(obj.indexes[1] + this.replacestring.length, string.length);
       string = `${start}${this.replacestring}${end}`;
-      console.log(string);
     });
     // Return the data
     data["output"] = string;
