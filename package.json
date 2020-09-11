@@ -1,11 +1,19 @@
 {
-  "name": "string-npm-module",
-  "version": "1.0.0",
-  "description": "String functions to make life easier ",
+  "name": "str-parse",
+  "version": "1.0.1",
+  "description": "Extended String functionality",
   "main": "basic.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Siddarth Kotthur",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Immortal000/strpase.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Immortal000/strpase/issues"
+  },
+  "homepage": "https://github.com/Immortal000/strpase#readme"
 }
